@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f2dfb1;
+}
+
+.container{
+    text-align: center;
+    width: 400px;
+    margin: 40px auto;
+    padding-top: 5px;
+    box-shadow: -2px 2px 35px 0px rgba(0,0,0,0.73);
+    border-radius: 10px;
+    transition: background .3s;
+}
+
+
+.container.active, body.active{
+    background-color: #b7c9a9;
+    color: #2e292e;
+}
+
+.btn{
+    width: 60px;
+    height: 20px;
+    border: 2px solid rgba(0,0,0,0.4);
+    border-radius: 60px;
+    position: relative;
+    margin: 25px auto;
+    cursor: pointer;
+}
+
+.btn:before{
+    content:'';
+    position: absolute;
+    width: 15px;
+    height:15px;
+    background: rgba(0,0,0,0.8);;
+    border-radius: 50%;
+    top:50%;
+    left: 1px;
+    transform: translateY(-50%);
+    transition: left .3s;
+}
+
+.btn.active:before{
+    left: 40px;
+}
+
+.foto-perfil{
+    width: 170px;
+    height: 170px;
+    border: 2px double rgba(0,0,0,0.4);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+}
+
+li{
+    padding: 10px 45px;
+    font-size: 18px;
+}
+
+h1{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    opacity: 0.85;
+}
+
+ul li a{
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 15px;
+    height: 45px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    background-color: #ff7c70;
+    transition: background 300ms;
+}
+
+li:nth-child(2) img{
+    padding-left: 53px;
+  }
+
+li a:hover{
+    background-color: #fe6763;
+}
+
+ul li a img {
+    padding-left: 35px;
+}
+
+p{
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 20px;
+}
+
+footer{
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 0.6;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+footer a{
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 0.9;
+    transition: color 400ms;
+}
+
+footer a:hover{
+    color: black;
+}
+
+
+
